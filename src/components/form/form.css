@@ -1,9 +1,4 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background: #f3f4f6;
-    margin: 0;
-    padding: 0;
-  }
+
   
   /* Container */
   .flex {
@@ -91,7 +86,7 @@ body {
   }
   
   /* Button */
-  button {
+  .button {
     width: 100%;
     padding: 10px;
     background-color: #48bb78;
@@ -102,11 +97,11 @@ body {
     cursor: pointer;
   }
   
-  button:hover {
+  .button:hover {
     background-color: #38a169;
   }
   
-  button:focus {
+  .button:focus {
     outline: none;
   }
   

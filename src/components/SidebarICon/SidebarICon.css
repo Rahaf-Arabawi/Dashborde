@@ -1,10 +1,12 @@
+.sidebar{
+  background: #303030;
+}
 .span-between-icon{
   height: 3px;
   background-color: #e0e0e0;
 }
 .sidebar-head-icon{
   color: #f1f1f1;
-  /* background-color: #7506b6 */
 }
 .sidebar-icon{
   color: #423c3c;
@@ -26,7 +28,6 @@
   justify-content: center;
 }
 .img-sidebar{
-  /* background-color: #7506b6; */
   width: 20px;
   height: 2px;
   display: flex;

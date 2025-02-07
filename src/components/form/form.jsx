@@ -16,8 +16,7 @@ const RegistrationForm = () => {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gradient-to-b from-orange-400 to-orange-600">
       <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
-        <h2 className="text-2xl font-bold text-center mb-2">Registration Form</h2>
-        <p className="text-center text-gray-600 mb-6">Fill out the form carefully for registration</p>
+        <h2 className="text-2xl font-bold text-center mb-2">Add Student</h2>
         <form onSubmit={handleSubmit(onSubmit)}>
           {/* Student Name */}
           <div className="grid grid-cols-2 gap-4 mb-4">
@@ -51,27 +50,21 @@ const RegistrationForm = () => {
             </div>
           </div>
 
-          {/* Student ID & Classes */}
+          {/* Mobile & Upload Image */}
           <div className="grid grid-cols-2 gap-4 mb-4">
             <div>
-              <label className="block text-gray-700">Student ID</label>
-              <input {...register("studentId", { required: "Student ID is required" })} className="w-full border rounded p-2" />
+              <label className="block text-gray-700">Mobile</label>
+              <input {...register("studentId", { required: "Mobile is required" })} className="w-full border rounded p-2" />
               {errors.studentId && <p className="text-red-500 text-sm">{errors.studentId.message}</p>}
             </div>
             <div>
-              <label className="block text-gray-700">List of Classes</label>
-              <select {...register("classList", { required: "Please select a class" })} className="w-full border rounded p-2">
-                <option value="">Please Select</option>
-                <option value="math">Mathematics</option>
-                <option value="science">Science</option>
-                <option value="history">History</option>
-              </select>
-              {errors.classList && <p className="text-red-500 text-sm">{errors.classList.message}</p>}
+              <label className="block text-gray-700">Upload Image</label>
+              <input type="file" className="w-full border rounded p-2" />
             </div>
           </div>
 
           {/* Submit Button */}
-          <button type="submit" className="w-full bg-green-500 text-white p-2 rounded hover:bg-green-600 transition">
+          <button type="submit" className="button w-full bg-green-500 text-white p-2 rounded hover:bg-green-600 transition">
             Submit
           </button>
         </form>
